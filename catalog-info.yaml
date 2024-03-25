@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-sample-app
+  annotations:
+    backstage.io/kubernetes-id: backstage-sample-app
+    backstage.io/kubernetes-namespace: default
+spec:
+  type: service
+  system: sample-app
+  lifecycle: experimental
+  owner: group:default/apc-nonoshita
+  git: github
+  git_host_url: github.com
+  git_owner_name: apc-nonoshita
